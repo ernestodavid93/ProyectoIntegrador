@@ -1,0 +1,64 @@
+h1, h2, h3, h4{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+
+}
+
+.h{
+    font-size: 10rem;
+   
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagenn{
+    background-image: url('img/meet.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 55vh;
+}
+
+.baner{
+    background-image: url('img/room.jpg');
+    height: 22rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bac{
+    background-color: rgb(247, 212, 159);
+}
+
+.card{
+    height: 101%;
+}
+
+.card-text{
+    height: 67%;
+}
+
+.bgfoo{
+    background-color: tomato;
+}
+
+.iconos{
+    font-size: 3rem;
+    color: black;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+.bg{
+    background-color: white;
+}
+.enlaces{
+    display: flex;
+    text-decoration: none;
+    text-align: right;
+}
+
+
