@@ -14,6 +14,14 @@ h1, h2, h3, h4{
     justify-content: space-between;
 }
 
+.contactanos_img{
+    background-image: url('img/house.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 120vh;
+}
+
 .imagenn{
     background-image: url('img/meet.jpg');
     background-repeat: no-repeat;
