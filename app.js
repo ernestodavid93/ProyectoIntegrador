@@ -12,11 +12,11 @@ btn.addEventListener('click', () => {
     }
     Email.send({
         Host: "smtp.mailtrap.io",
-        Username: "673d97073f1823",
-        Password: "fb47750c93b34c",
-        To: "youreamil@gmail.com",
+        Username: "6e05853e6064c3",
+        Password: "f8cf8f8989aee2",
+        To: "Rent.A.Home.E6@gmail.com",
         From: correo,
         Subject: "Contactanos",
-        Body: mensaje + "<br>" + nombre + "<br>" + telefono
+        Body: mensaje + "<br>" + nombre + "<br>" + telefono + "<br>" +correo
     }).then(mensaje => alert("Mensaje enviado con éxito"))
 })
