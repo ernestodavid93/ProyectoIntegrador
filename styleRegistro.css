@@ -48,6 +48,7 @@ h1, h2, h3, h4{
     margin: 15px;
 }
 
+
 .card{
     height: 101%;
 }
@@ -59,6 +60,7 @@ h1, h2, h3, h4{
 .bgfoo{
     background-color: tomato;
 }
+
 
 .iconos{
     font-size: 3rem;
@@ -78,6 +80,31 @@ footer{
     text-align: center;
 }
 
-.padCar{
-    padding-top: 2rem;
+.input{
+            width: 250px;
+            background: none;
+            border: 0;
+            border-bottom: 1px solid black;
+            margin: 10px;
+            padding: 0px 0px 5px 20px;
+
+}
+
+.label{
+    margin: 0px 0px 0px 10px;
+    text-align: center; text-shadow: black 0.1em 0.1em 0.1em; color: white;
+}
+
+.button{
+    width: 100px;
+    border: 1px solid tomato;
+    border-radius: 10px;
+    margin: 10px 0px 0px 80px;
+    background-color: #ff8f1f;
+}
+
+::placeholder {
+    color: black;
+    /* text-shadow: black 0.1em 0.1em 0.2em; */
+
 }
