@@ -48,6 +48,7 @@ h1, h2, h3, h4{
     margin: 15px;
 }
 
+
 .card{
     height: 101%;
 }
@@ -59,6 +60,7 @@ h1, h2, h3, h4{
 .bgfoo{
     background-color: tomato;
 }
+
 
 .iconos{
     font-size: 3rem;
