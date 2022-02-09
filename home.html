@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conócenos</title>
-    <link rel="stylesheet" href="styleHome.css">
+    <title>Home</title>
+  
     <!--Fonts Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,20 +19,25 @@
     <!--Font awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./precio.css">
+
+        <script src="./scriptHome.js"></script>
+        <link rel="stylesheet" href="styleHome.css">
 </head>
 
-<body>
+<body onload="show()">
 
+  <!-- NavBar -->
 <div class="container_fluid">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container_fluid">
-            <a href="#" class="navbar-brand">Rent-A-Home</a>
+            <a href="#" class="navbar-brand">iRoomie</a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="MenuNavegacion" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms3">
-                    <li class="nav-item"><a class="nav-link" href="#navBarNav">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#navBarNav">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactanos.html">Contactanos</a></li>
                     <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
                 </ul>
@@ -47,47 +52,67 @@
     </nav>
 </div>
 
-    <!-- <div class="container" id="navbarNav">
-        <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light bg col-md-5 col-sm-4">
-                <div class="dropdown">
-                    <a class="" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-bars iconos" style="cursor: pointer;"></i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#navBarNav">Home</a>
-                        <a class="dropdown-item" href="./contactanos.html">Contactanos</a>
-                        <a class="dropdown-item" href="./nosotros.html">Nosotros</a>
-                    </div>
-                </div>
-            </nav>
-            <div class="col-md-6 col-sm-4">
-                <a class="navbar-brand " href="#">
-                    <img src="img/logo.jpeg" alt="">
-                </a>
-            </div>
-            <div class="col-md-1 col-sm-4">
-                <a class="navbar-brand " href="./registro.html">
-                    <i class="fas fa-user-circle iconos"
-                    style="color: orange; align-items: center; cursor: pointer; margin-top: 1.5rem;"></i>
-                </a>
-            </div>
-        </div>
-
-    </div> -->
-
+  <!-- Jumbotron -->
     <div id=jhome class="jumbotron jumbotron-fluid">
         <div class="container">
-        <h1 class="display-4"></h1>
+        
         <nav id=button class="navbar navbar-light">
-            <form class="form-inline">
-              <button class="btn btn-outline-success" type="button">Casa</button>
-              <button class="btn btn-outline-success" type="button">Departamento</button>
-              <button class="btn btn-outline-success" type="button">Roomies</button>
-              <nav class="navbar navbar-light bg-light">
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Ubicación" aria-label="Ubicación">
-    <input class="form-control mr-sm-2" type="search" placeholder="Precio" aria-label="Precio">
+          
+          <div class="container" id="navbarNav">
+        <div class="row">
+          <div class="col-sm">
+            <nav  class="navbar navbar-light bg-light" >
+                <div class="dropdown">
+
+                    <div class="btn btn-secondary dropdown-toggle search-input" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false">
+                      
+                      <i class="fas fa-map-marker-alt"></i>
+                      <input class="autocom-box" type="search" id="input-search" placeholder="Ingresa la ubicacion">
+                      
+                    </div>
+
+                    <div class="dropdown-menu content-serch" aria-labelledby="dropdownMenu2" id="table" >
+                      <button class="dropdown-item">Guadalajara</button>
+                      <button class="dropdown-item">Tonalá</button>
+                      <button class="dropdown-item">Zapopan</button>
+                      <button class="dropdown-item">Tlaquepaque</button>
+                    </div>
+                  </div>
+
+
+                <nav class="navbar navbar-light bg-light">
+                    <div class="dropdown">
+                      
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false">
+
+                          <i class="fas fa-money-bill-wave"></i>
+                          <input type="text" id="input-search" placeholder="Ingresa el rango de precio">
+
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2" >
+                            <h5>Rango de precios</h5>
+                          <button class="dropdown-item" type="button"><div class="price-input">
+                            <div class="field">
+                              <span>Min</span>
+                              <input type="number" class="input-min" value="2500">
+                            </div>
+                            <div class="separator">-</div>
+                            <div class="field">
+                              <span>Max</span>
+                              <input type="number" class="input-max" value="7500">
+                            </div>
+                          </div>
+                          <div class="slider">
+                            <div class="progress"></div>
+                          </div>
+                          <div class="range-input">
+                            <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                            <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                          </div>
+                        </div></button>
+                        </div>
+              <script src="./precio.js"></script>
+        </div>
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
 </nav>
@@ -129,136 +154,275 @@
   </div>
 
 
+  <h1>Ultimas actualizaciones</h1>
 
-<!--Agregar el carrusel con imagenes-->
-<br>
-<hr>
-<hr>
-  <main class = "container">
-    <h1>Ultimas publicaciones</h1>
-   <div class="card-deck">
+<!--Slider-->
+<div class="padre">
 
-        <div class="card">
-          <img src="./img/card2.jpg" class="cardImg" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">$PRECIO$</h5>
-            <div class="row">
+  <div id="slLeft" onclick="moveLeft()">
+      <button>&lt;</button>
+  </div>
+
+  <div class="card-deck">
+
+  <div class="hijo card" id="c1">
+      
+      <div class="slide-img">
+          <img src="./img/card1.jpg" class="cardImg" alt="...">
+          <div class="overlay">
+              <a href="./view.html" class="inf-btn">Ver más</a>
+          </div>
+      </div>
+
+        <div class="card-body">
+          <h5 class="card-title">$PRECIO$</h5>
+          <div class="row">
+              <div class="col-sm">
+                  <i class="fas fa-bed"> 1</i>
+                </div>
                 <div class="col-sm">
-                    <i class="fas fa-bed"> 1</i>
-                  </div>
-                  <div class="col-sm">
-                    <i class="fas fa-bath"> 1</i>
-                  </div>
-                  <div class="col-sm">
-                    <i class="fas fa-car"> 1</i>
-                  </div>
+                  <i class="fas fa-bath"> 1</i>
+                </div>
+                <div class="col-sm">
+                  <i class="fas fa-car"> 1</i>
+                </div>
+            </div>
+            <br>
+            <h5>ubicacion</h5> 
+        <p class="card-text">Descripcion de la propiedad</p>
+        <p class="cardL"><small >Last updated 3 mins ago</small></p>
+        <!-- <a href="./view.html" class="btn btn-primary">Ver mas</a> -->
+        </div>
+  </div>
+
+  <div class="hijo card" id="c2">
+      <img src="./img/card2.jpg" class="cardImg" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">$PRECIO$</h5>
+          <div class="row">
+              <div class="col-sm">
+                  <i class="fas fa-bed"> 2</i>
+                </div>
+                <div class="col-sm">
+                  <i class="fas fa-bath"> 2</i>
+                </div>
+                <div class="col-sm">
+                  <i class="fas fa-car"> 2</i>
+                </div>
+            </div>
+            <br>
+            <h5>ubicacion</h5> 
+        <p class="card-text">Descripcion de la propiedad</p>
+        <p class="cardL"><small >Last updated 3 mins ago</small></p>
+        <a href="./view.html" class="btn btn-primary">Ver mas</a>
+        </div>
+  </div>
+
+  <div class="hijo card" id="c3">
+      <img src="./img/card3.jpg" class="cardImg" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">$PRECIO$</h5>
+        <div class="row">
+            <div class="col-sm">
+                <i class="fas fa-bed"> 3</i>
               </div>
-              <br>
-              <h5>ubicacion</h5> 
-          <p class="card-text">Descripcion de la propiedad</p>
-          <p class="cardL"><small >Last updated 3 mins ago</small></p>
-          <a href="./view.html" class="btn btn-primary">Ver mas</a>
+              <div class="col-sm">
+                <i class="fas fa-bath"> 3</i>
+              </div>
+              <div class="col-sm">
+                <i class="fas fa-car"> 3</i>
+              </div>
           </div>
-        </div>
+          <br>
+          <h5>ubicacion</h5> 
+      <p class="card-text">Descripcion de la propiedad</p>
+      <p class="cardL"><small >Last updated 3 mins ago</small></p>
+      <a href="./view.html" class="btn btn-primary">Ver mas</a>
+      </div>
+  </div>
 
-        <div class="card">
-          <img src="./img/card3.jpg" class="cardImg" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">$PRECIO$</h5>
-            <div class="row">
+  <div class="hijo card" id="c4">
+      <img src="./img/card4.jpg" class="cardImg" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">$PRECIO$</h5>
+          <div class="row">
+              <div class="col-sm">
+                  <i class="fas fa-bed"> 4</i>
+                </div>
                 <div class="col-sm">
-                    <i class="fas fa-bed"> 2</i>
-                  </div>
-                  <div class="col-sm">
-                    <i class="fas fa-bath"> 2</i>
-                  </div>
-                  <div class="col-sm">
-                    <i class="fas fa-car"> 2</i>
-                  </div>
-              </div> 
-              <br>
-              <h5>ubicacion</h5> 
-          <p class="card-text">Descripcion de la propiedad</p>
-          <p class="cardL"><small class="text-muted">Last updated 3 mins ago</small></p>
-          <a href="./view.html" class="btn btn-primary">Ver mas</a>
-          </div>
-        </div>
-
-        <div class="card">
-            <img src="./img/card4.jpg" class="cardImg" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">$PRECIO$</h5>
-               <div class="row">
-                  <div class="col-sm">
-                    <i class="fas fa-bed"> 3</i>
-                  </div>
-                  <div class="col-sm">
-                    <i class="fas fa-bath"> 3</i>
-                  </div>
-                  <div class="col-sm">
-                    <i class="fas fa-car"> 3</i>
-                  </div>
-                </div> 
-                <br>
-                <h5>ubicacion</h5> 
-            <p class="card-text">Descripcion de la propiedad</p>
-            <p class="cardL"><small class="text-muted">Last updated 3 mins ago</small></p>
-            <a href="./view.html" class="btn btn-primary">Ver mas</a>
+                  <i class="fas fa-bath"> 4</i>
+                </div>
+                <div class="col-sm">
+                  <i class="fas fa-car"> 4</i>
+                </div>
             </div>
-          </div>
-
-          <div class="card">
-            <img src="./img/card 5.jpg" class="cardImg" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">$PRECIO$</h5>
-                <div class="row">
-                    <div class="col-sm">
-                        <i class="fas fa-bed"> 4</i>
-                      </div>
-                      <div class="col-sm">
-                        <i class="fas fa-bath"> 4</i>
-                      </div>
-                      <div class="col-sm">
-                        <i class="fas fa-car"> 4</i>
-                      </div>
-                  </div> 
-                  <br>
-                  <h5>ubicacion</h5> 
-              <p class="card-text">Descripcion de la propiedad</p>
-              <p class="cardL"><small class="text-muted">Last updated 3 mins ago</small></p>
-               <a href="./view.html" class="btn btn-primary">Ver mas</a>
-            </div>
-          </div>
-
+            <br>
+            <h5>ubicacion</h5> 
+        <p class="card-text">Descripcion de la propiedad</p>
+        <p class="cardL"><small >Last updated 3 mins ago</small></p>
+        <a href="./view.html" class="btn btn-primary">Ver mas</a>
         </div>
-    </main>
+  </div>
 
-  
+  <div class="hijo card" id="c5">
+      <img src="./img/card 5.jpg" class="cardImg" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">$PRECIO$</h5>
+        <div class="row">
+            <div class="col-sm">
+                <i class="fas fa-bed"> 5</i>
+              </div>
+              <div class="col-sm">
+                <i class="fas fa-bath"> 5</i>
+              </div>
+              <div class="col-sm">
+                <i class="fas fa-car"> 5</i>
+              </div>
+          </div>
+          <br>
+          <h5>ubicacion</h5> 
+      <p class="card-text">Descripcion de la propiedad</p>
+      <p class="cardL"><small >Last updated 3 mins ago</small></p>
+      <a href="./view.html" class="btn btn-primary">Ver mas</a>
+      </div>
+  </div>
+
+  <div class="hijo card" id="c6">
+      <img src="./img/card6.jpg" class="cardImg" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">$PRECIO$</h5>
+          <div class="row">
+              <div class="col-sm">
+                  <i class="fas fa-bed"> 6</i>
+                </div>
+                <div class="col-sm">
+                  <i class="fas fa-bath"> 6</i>
+                </div>
+                <div class="col-sm">
+                  <i class="fas fa-car"> 6</i>
+                </div>
+            </div>
+            <br>
+            <h5>ubicacion</h5> 
+        <p class="card-text">Descripcion de la propiedad</p>
+        <p class="cardL"><small >Last updated 3 mins ago</small></p>
+        <a href="./view.html" class="btn btn-primary">Ver mas</a>
+        </div>
+  </div>
+
+  <div class="hijo card" id="c7">
+      <img src="./img/card3.jpg" class="cardImg" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">$PRECIO$</h5>
+          <div class="row">
+              <div class="col-sm">
+                  <i class="fas fa-bed"> 7</i>
+                </div>
+                <div class="col-sm">
+                  <i class="fas fa-bath"> 7</i>
+                </div>
+                <div class="col-sm">
+                  <i class="fas fa-car"> 7</i>
+                </div>
+            </div>
+            <br>
+            <h5>ubicacion</h5> 
+        <p class="card-text">Descripcion de la propiedad</p>
+        <p class="cardL"><small >Last updated 3 mins ago</small></p>
+        <a href="./view.html" class="btn btn-primary">Ver mas</a>
+        </div>
+  </div>
+
+  <div class="hijo card" id="c8">
+      <img src="./img/card4.jpg" class="cardImg" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">$PRECIO$</h5>
+          <div class="row">
+              <div class="col-sm">
+                  <i class="fas fa-bed"> 8</i>
+                </div>
+                <div class="col-sm">
+                  <i class="fas fa-bath"> 8</i>
+                </div>
+                <div class="col-sm">
+                  <i class="fas fa-car"> 8</i>
+                </div>
+            </div>
+            <br>
+            <h5>ubicacion</h5> 
+        <p class="card-text">Descripcion de la propiedad</p>
+        <p class="cardL"><small >Last updated 3 mins ago</small></p>
+        <a href="./view.html" class="btn btn-primary">Ver mas</a>
+        </div>
+  </div>
+
+  <div class="hijo card" id="c9">
+      <img src="./img/card 5.jpg" class="cardImg" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">$PRECIO$</h5>
+        <div class="row">
+            <div class="col-sm">
+                <i class="fas fa-bed"> 9</i>
+              </div>
+              <div class="col-sm">
+                <i class="fas fa-bath"> 9</i>
+              </div>
+              <div class="col-sm">
+                <i class="fas fa-car"> 9</i>
+              </div>
+          </div>
+          <br>
+          <h5>ubicacion</h5> 
+      <p class="card-text">Descripcion de la propiedad</p>
+      <p class="cardL"><small >Last updated 3 mins ago</small></p>
+      <a href="./view.html" class="btn btn-primary">Ver mas</a>
+      </div>
+  </div>
+
+  <div class="hijo card" id="c10">
+      <img src="./img/card6.jpg" class="cardImg" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">$PRECIO$</h5>
+          <div class="row">
+              <div class="col-sm">
+                  <i class="fas fa-bed"> 10</i>
+                </div>
+                <div class="col-sm">
+                  <i class="fas fa-bath"> 10</i>
+                </div>
+                <div class="col-sm">
+                  <i class="fas fa-car"> 10</i>
+                </div>
+            </div>
+            <br>
+            <h5>Ubicacion</h5> 
+        <p class="card-text">Descripcion de la propiedad</p>
+        <p class="cardL"><small >Last updated 3 mins ago</small></p>
+        <a href="./view.html" class="btn btn-primary">Ver mas</a>
+        </div>
+  </div>
+
+</div>
+
+
+
+  <div id="slRight" onclick="moveRight()">
+      <button>&gt;</button>
+  </div>
+
+</div>
+
+  <br>
+  <br>
         
         <br>
-        <!-- <footer id="footer" class="py-5 bgfoo text-white">
-            <div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm">
-                            Copyright
-                        </div>
-                        <div class="col-sm">
-                            Rent.A.Home.E6@gmail.com
-                        </div>
-                        <div class="col-sm">
-                            01 (800) 000 1234
-                        </div>
-                    </div>
-                </div>
-        </footer> -->
-
+        <!-- footer -->
         <footer class="bg-dark text-white py-4">
                 <div class="container">
                         <nav class="row">
                         <!--Logo-->
                         <a hreg="#" class="col-3 text-reset text-uppercase d-flex align-items-center">
-                            Rent-A-Home
+                            iRoomie
                         </a>
                         <!--Menu 1-->
                         <ul class="col-3 list-unstyled">
@@ -294,14 +458,12 @@
                         </nav>
 
                         <hr>
-                        <p>Todos los derechos reservados © 2022 Rent-A-Home </p>
+                        <p>Todos los derechos reservados © 2022 iRoomie </p>
                 </div>
-        </footer
+            </footer>
 
 
-
-
-
+        <script src="./precio.js"></script>
         <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -309,6 +471,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
             crossorigin="anonymous"></script>
+
+            
+
 </body>
 
 </html>
