@@ -1,9 +1,14 @@
 function addItem(item){
     const itemHTML =
     
+<<<<<<< HEAD
     '<div class="col-md-4 col-sm-6"'+item.cartNu +'">\n'+
     '<div class="card">\n'+
     '  <img src="'+item.foto +'" class="imgprofile" alt="...">\n'+
+=======
+    '<div class="hijo card" id="c'+item.cartNu +'" style="width: 18rem;">\n'+
+    '   <img src="'+item.foto +'" class="cardImg img-fluid" alt="...">\n'+
+>>>>>>> Omar
     '    <div class="card-body">\n'+
     '      <h5 class="card-title">Precio '+item.precio+'</h5>\n'+
     '      <div class="row">\n'+
@@ -23,7 +28,10 @@ function addItem(item){
     '    <p class="cardL"><small >Last updated 3 mins ago</small></p>\n'+
     '    <a href="./view.html" class="btn btn-primary">Ver mas</a>\n'+
     '    </div>\n'+
+<<<<<<< HEAD
     '     </div>\n'+
+=======
+>>>>>>> Omar
     '</div>';
     
     const itemsContainer = document.getElementById("list-items");
@@ -163,6 +171,7 @@ addItem({
     'ubicacion':'Justo Sierra no.145',
     'descripcion':'Habitacion de lugo con buena ubicacion'
     
+<<<<<<< HEAD
 });
 
 // var cartNu = 0;
@@ -171,3 +180,6 @@ addItem({
 // for (i = 0, i <=10, i++) {
 //  cartNu = i;
 // }
+=======
+});
+>>>>>>> Omar
