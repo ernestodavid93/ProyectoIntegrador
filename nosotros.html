@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conócenos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="styleHome.css">
     <!--Fonts Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,86 +25,118 @@
 <body>
 
 
-    <div class="container" id="navbarNav">
-        <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light bg col-md-5 col-sm-4">
-                <div class="dropdown">
-                    <a class="" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-bars iconos" style="cursor: pointer;"></i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="./home.html">Home</a>
-                        <a class="dropdown-item" href="./nosotros.html">Contactanos</a>
-                        <a class="dropdown-item" href="#navBarNav">Nosotros</a>
+   
+<div>
+  
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Inicio de Sesión</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+       
+                  <form class="px-4 py-3">
+                    <div class="form-group">
+                      <label for="exampleDropdownFormEmail1">Correo</label>
+                      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@ejemplo.com">
                     </div>
-                </div>
-            </nav>
-            <div class="col-md-6 col-sm-4">
-                <a class="navbar-brand " href="#">
-                    <img src="img/logo.jpeg" alt="">
-                </a>
-            </div>
-            <div class="col-md-1 col-sm-4">
-                <i class="fas fa-user-circle iconos"
-                    style="color: orange; align-items: center; cursor: pointer; margin-top: 1.5rem;"></i>
-            </div>
+                    <div class="form-group">
+                      <label for="exampleDropdownFormPassword1">Contraseña</label>
+                      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Clave">
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                          Recuérdame
+                        </label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Acceder</button>
+                  </form>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
+                  <a class="dropdown-item" href="#">¿Nuevo usuario? Regístrate</a>
+                  <p style="text-align: center; font-weight: bold;">O</p>
+                  <button type="button" class="btn btn-primary">Acceder con Facebook</button>
+                  <button type="button" class="btn btn-danger">Acceder con Google</button>
+                  
+          <div class="modal-footer">
+           <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+         <button type="button" class="btn btn-primary">Enviar</button> -->
+          </div>
         </div>
-
+      </div>
+    </div>
+    </div> 
+    <!-- accion registro fin-->
+    
+    
+    
+      <!-- NavBar -->
+      <div class="sticky-top">
+    <div class="container_fluid">
+        <nav class="navbar navbar-expand-md">
+            <div class="container_fluid">
+               
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="MenuNavegacion">
+                    <ul class="navbar-nav ms3" >
+                        <li class="nav-item"><a class="nav-link" href="home.html" >Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactanos.html">Contáctanos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li>
+                            <a class="nav-link text-nowrap" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Iniciar sesión</a>
+                        </li>
+                    </ul>
+                    <ul>
+                       <!-- Logo animado -->
+                      <a href="home.html">
+                        <span id="uno">iRoomie</span>
+                      </a>
+                      <!-- fin logo animado -->
+                    </ul>
+    
+                </div>
+        </nav>
+    </div>
     </div>
 
     <!--Jumbotron para el titulo-->
-    <div class="jumbotron jumbotron-fluid baner">
+    <div class="jumbotron jumbotron-fluid baneri">
         <div class="container">
-            <h1 class="display-4"
-                style="text-align: center; text-shadow: black 0.1em 0.1em 0.1em; font-size: 4rem; color: white;">
-                Nosotros</h1>
-            <p class="lead"></p>
+            <h1 class="display-4" style="text-align: center;">Nosotros</h1>
+            <p class="lead" style="text-align: center;">Nuestro proposito es brindarte tu espacio perfecto</p>
+           
         </div>
     </div>
 
     <header class="container text-justify">
+        <h1 class="text-center">Objetivo</h1>
 
-        <br>
-        <hr>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="imagenn"></div>
-            </div>
-            <div class="col-sm-6">
-                <h1 class="text-center">Objetivo</h1>
-
-                <p> El alto número de jóvenes que ingresan a universidades año con año, tanto foráneos y de la misma ciudad, 
-                    han constribuido a incrementar notablemente la demanda en la renta de habitaciones dado que muchos buscan
-                    vivir lo mas a sus Universidades.</p>
-                <!-- <p class="lead">La necesidad y los cambios constantes en el ritmo de vida que se presenta en estos días,
-                    el hecho de trasladarnos a diferentes puntos en la búsqueda de nuevas oportunidades y poder habitar
-                    en esos lugares surge la problemática para conseguir lugares seguros, bonitos y de fácil búsqueda,
-                    desarrollamos esta aplicación para facilitar esa tarea por costos, zonas y el tipo de personas con
-                    las que te gustaría convivir.
-
-                    Con esta necesidad clara, se planea desarrollar un sitio web seguro para la oferta y acceso a la
-                    informacion relevante para la renta de inmuebles en la zona metropolitana de Guadalajara.</p> -->
-            </div>
-
-        </div>
-        <br>
+        <p> El alto número de jóvenes que ingresan a universidades año con año, tanto foráneos y de la misma ciudad, 
+            han constribuido a incrementar notablemente la demanda en la renta de habitaciones dado que muchos buscan
+            vivir lo mas a sus Universidades.</p>
     </header>
 
     <main>
 
-        <!--
-    <div style="padding:13%; background-repeat: no-repeat; background-image: url('img/fondo.jpg'); opacity:0.2; position:relative;">
-        </div> 
-    -->
 
-
-        <div class="container padCar ">
-
+    <section class="">
+        <div class="container padCar">
+            
             <div class="row text-justify mt-5" style="padding: 2rem;">
                 <div class="col-sm bac mr-3 bac" >
                     <i class=" fas fa-bullseye iconos"></i>
-                    <h2 class="text-center">Misión</h2>
-                    <p>En iRommies estamos comprometidos con nuestros clientes, en brindarles una manera rápida y
+                    <h2 class="text-center "><b>Misión</b></h2>
+                    <p class=""> En iRommies estamos comprometidos con nuestros clientes, en brindarles una manera rápida y
                         segura de buscar un compañero de habitacion en renta y apreciamos que nuestros clientes nos elijan como la
                         plataforma líder en el sector.
                     </p>
@@ -112,25 +145,25 @@
 
                 <div class="col-sm mr-3 bac">
                     <i class="far fa-eye iconos"></i>
-                    <h2 class="text-center">Visión</h2>
-                    <p>Ser líderes en el sector, ofreciendo a nuestros usuarios nuestra aplicación como una herramienta
+                    <h2 class="text-center "><b>Visión</b></h2>
+                    <p class="">Ser líderes en el sector, ofreciendo a nuestros usuarios nuestra aplicación como una herramienta
                         que facilite cada vez más la forma de comunicación y tratos del inmueble a rentar.
                     </p>
                 </div>
 
                 <div class="col-sm bac">
                     <i class="far fa-flag iconos"></i>
-                    <h2 class="text-center">Valores</h2>
-                    <ul>
-                        <li>Confiabilidad con nuestros usuarios.</li>
-                        <li>Compromiso con nuestra comunidad.</li>
-                        <li>Calidad de trabajo.</li>
+                    <h2 class="text-center "> <b>Valores</b></h2>
+                    <ul class="">
+                        <li> Confiabilidad con nuestros usuarios.</li>
+                        <li> Compromiso con nuestra comunidad. </li>
+                        <li> Calidad de trabajo.</li>
                     </ul>
                 </div>
 
             </div>
         </div>
-
+    </section>
 
         <main class="container">
 

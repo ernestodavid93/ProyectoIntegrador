@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
         <link rel="stylesheet" href="./precio.css">
-
+        <link rel="stylesheet" href="./css/style.css">
         <script src="./scriptHome.js"></script>
         <link rel="stylesheet" href="styleHome.css">
 </head>
@@ -90,9 +90,10 @@
             </button>
             <div class="collapse navbar-collapse" id="MenuNavegacion">
                 <ul class="navbar-nav ms3" >
-                    <li class="nav-item"><a class="nav-link" href="#navBarNav" >Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactanos.html">Contáctanos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home.html" >Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactanos.html">Contáctanos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li>
@@ -101,7 +102,9 @@
                 </ul>
                 <ul>
                    <!-- Logo animado -->
-                  <span id="uno" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">iRoomie</span>
+                  <a href="home.html">
+                    <span id="uno">iRoomie</span>
+                  </a>
                   <!-- fin logo animado -->
                 </ul>
 
@@ -109,6 +112,7 @@
     </nav>
 </div>
 </div>
+
   <!-- Jumbotron -->
     <div id=jhome class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -309,7 +313,7 @@
             </div>
             <a class="btn btn-secondary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Cancelar</a>
             
-            <a href="#" class="btn btn-lg active" style="background-color: tomato;" role="button" aria-pressed="true">Aplicar filtros :)</a>
+            <a href="#" class="btn btn-lg active" style="background-color: tomato;" role="button" aria-pressed="true">Aplicar filtros</a>
             
             <!-- <button type="button" class="btn btn-outline-secondary">Cancelar</button>
             <button type="button" class="btn btn-outline-success">Aplicar filtros</button> -->
@@ -320,10 +324,10 @@
 
 
 
-
+     <br>
     <!--Opciones casa, depa, roomie-->
   <div class="container ">
-
+    
         <div class="row text-justify mt-5">
             <div class="col-sm  mr-3" >
                 <h2 class="text-center">Roomie</h2>
@@ -331,7 +335,6 @@
                 <p>
                 </p>
         </div>
-
 
         <div class="col-sm mr-3" >
                 <h2 class="text-center">Departamentos</h2>
@@ -352,17 +355,19 @@
     </div>
   </div>
 
+  <br>
+  <hr>
 <!-- JSON de los productos -->
-
+<h1 class="text-center h1">Nos adaptamos a tus necesidades</h1>
 <div class="container">
     <div class="">
-<div id="list-items"></div>
-      <div id="slLeft" onclick="moveLeft()">
-      <button>&lt;</button>
+  <div id="list-items"></div>
+      <!-- <div id="slLeft" onclick="moveLeft()">
+      <button>&lt;</button> -->
     </div>
 
 <!--Slider-->
-<div class="padre">
+<!-- <div class="padre">
 
   
 
@@ -376,61 +381,37 @@
 
   <div id="slRight" onclick="moveRight()">
       <button>&gt;</button>
+  </div> -->
+
+</div>
+</div>
+</div>
+
+  <br>
+  <br>
+
+  <div class="row col-sm-6">
+    <div id="list-items"></div>
   </div>
-
-</div>
-</div>
-</div>
-
-  <br>
-  <br>
-        
         <br>
-        <!-- footer -->
-        <footer class="bg-dark text-white py-4">
-                <div class="container">
-                        <nav class="row">
-                        <!--Logo-->
-                        <a hreg="#" class="col-3 text-reset text-uppercase d-flex align-items-center">
-                            iRoomie
-                        </a>
-                        <!--Menu 1-->
-                        <ul class="col-3 list-unstyled">
-                            <li class="font-weight-bold text-uppercase">informacion</li>
-                            <li><a href="#" class="text-reset">Link 1</a></li>
-                            <li><a href="#" class="text-reset">Link 2</a></li>
-                            <li><a href="#" class="text-reset">Link 3</a></li>
-                        </ul>
-                        <!--Menu 2-->
-                        <ul class="col-3 list-unstyled">
-                            <li class="font-weight-bold text-uppercase">Links rapidos</li>
-                            <li><a href="#" class="text-reset">Link 1</a></li>
-                            <li><a href="#" class="text-reset">Link 2</a></li>
-                            <li><a href="#" class="text-reset">Link 3</a></li>
-                        </ul>
-                        <!--Redes sociales-->
-                        <ul class="col-3 list-unstyled">
-                            <li class="font-weight-bold text-uppercase">Redes sociales</li>
-                            <li class="d-flex justify-content-beetwen"></li>
-                                <!--FB-->
-                                <a href="#" class="text-reset">
-                                <i class="fab fa-facebook-f"></i>    
-                                </a>
-                            </li>
-                            <li class="d-flex justify-content-beetwen"></li>
-                             <!--Instagram-->
-                             <a href="#" class="text-reset">
-                                <i class="fab fa-instagram "></i>
-                                </a>
-                            </li>
-                            </ul>
-                        </ul>
-                        </nav>
 
-                        <hr>
-                        <p>Todos los derechos reservados © 2022 iRoomie </p>
-                </div>
-            </footer>
+        <!-- footer -->
+        <footer id="footer" class="py-5 bgfoo text-white">
+          <div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm">
+                          Copyright
+                      </div>
+                      <div class="col-sm">
+                          Rent.A.Home.E6@gmail.com
+                      </div>
+                      <div class="col-sm">
+                          01 (800) 000 1234
+                      </div>
+                  </div>
+              </div>
+      </footer>
 
         <script src="./items.js"></script> 
         <script src="./precio.js"></script>

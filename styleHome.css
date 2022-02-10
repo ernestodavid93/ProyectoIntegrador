@@ -11,7 +11,7 @@ h4 {
 }
 
 .h1 {
-  font-size: 10rem;
+  font-size: 2rem;
 }
 
 .barra {
@@ -212,7 +212,7 @@ h5 {
   font-size: 30px;
 }
 /* le agregue .list-items */
-.card  {
+/* .card  {
   height: 200%;
   margin: 20px;
   border-radius: 6px;
@@ -225,21 +225,21 @@ h5 {
 .card:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
-}
+} */
 
-.card img {
+/* .card img {
   width: 100%;
   height: 210px;
-}
+} */
 
-.card-text {
+/* .card-text {
   height: 67%;
 }
 
 .cardImg {
   height: 200px;
   width: 200px;
-}
+} */
 
 .overlay {
   position: absolute;
@@ -380,7 +380,7 @@ ul li a::before{
 
 
 .sticky-top{
-  background-color: tomato; 
+  background-color:darksalmon; 
 }
 
 .nav-link{
