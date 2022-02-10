@@ -1,29 +1,38 @@
 function addItem(item){
     const itemHTML =
-    '<div">\n'+
-        '<div class="card col-lg-4" style="width: 18rem;">\n' +
-                '<h5 class="card-title text-center">'+item.titulo+'</h5>\n' +
-            '    <img src="'+item.foto +'" class="card-img-top" alt="image">\n' +
-            '    <div class="card-body">\n' +
-            '        <p class="card-text">'+item.precio+'</p>\n' +
-            '        <p class="card-text"> <i class="fas fa-bed"></i>  Habitaciones: '+item.habitaciones+'</p>\n' +
-            '        <p class="card-text"> <i class="fas fa-bath"></i>  Baños: '+item.sanitario+'</p>\n' +
-            '        <p class="card-text"> <i class="fas fa-car"></i>  Cochera: '+item.cochera+'</p>\n' +
-            '        <p class="card-text"> <i class="fas fa-map-marker-alt"></i>  Ubicacion'+item.ubicacion+'</p>\n' +
-            '        <p class="card-text">'+item.descripcion+'</p>\n' +
-            '        <a href="#" class="btn btn-primary">Add</a>\n' +
-            '     </div>\n' +
-        '</div>\n' +
-    '</div>\n'+
-    '<br/>';
+    
+    '<div class="hijo card" id="c'+item.cartNu +'" style="width: 18rem;">\n'+
+    '   <img src="'+item.foto +'" class="cardImg img-fluid" alt="...">\n'+
+    '    <div class="card-body">\n'+
+    '      <h5 class="card-title">Precio '+item.precio+'</h5>\n'+
+    '      <div class="row">\n'+
+    '          <div class="col-sm">\n'+
+    '              <i class="fas fa-bed">'+item.habitaciones+'</i>\n'+
+    '            </div>\n'+
+    '            <div class="col-sm">\n'+
+    '              <i class="fas fa-bath">'+item.sanitario+'</i>\n'+
+    '            </div>\n'+
+    '            <div class="col-sm">\n'+
+    '              <i class="fas fa-car">'+item.cochera+'</i>\n'+
+    '            </div>\n'+
+    '        </div>\n'+
+    '        <br>\n'+
+    '        <p>'+item.ubicacion+'</p> \n'+
+    '    <p class="card-text">'+item.descripcion+'</p>\n'+
+    '    <p class="cardL"><small >Last updated 3 mins ago</small></p>\n'+
+    '    <a href="./view.html" class="btn btn-primary">Ver mas</a>\n'+
+    '    </div>\n'+
+    '</div>';
+    
     const itemsContainer = document.getElementById("list-items");
     itemsContainer.innerHTML += itemHTML;
 }
 
 addItem({
 
+    'cartNu':'1',
     'titulo':'Habitacion cerca de chapu',
-    'foto': './img/card2.jpg',
+    'foto': './img/card1.jpg',
     'precio':'$4,999',
     'habitaciones':'1',
     'sanitario':'1',
@@ -35,6 +44,7 @@ addItem({
 
 addItem({
 
+    'cartNu':'2',
     'titulo':'Departamento por CUAAD',
     'foto': './img/card2.jpg',
     'precio':'$3,999',
@@ -48,8 +58,9 @@ addItem({
 
 addItem({
 
+    'cartNu':'3',
     'titulo':'Habitacion cerca de CUCEI',
-    'foto': './img/card2.jpg',
+    'foto': './img/card3.jpg',
     'precio':'$4,999',
     'habitaciones':'1',
     'sanitario':'1',
@@ -60,8 +71,10 @@ addItem({
 });
     
 addItem({
+
+    'cartNu':'4',
     'titulo': 'Departamento',
-    'foto': '/img/card2.jpg',
+    'foto': '/img/card4.jpg',
     'precio': '2100$',
     'habitaciones': '2',
     'sanitario': '1',
@@ -71,8 +84,10 @@ addItem({
 })
 
 addItem({
+
+    'cartNu':'5',
     'titulo': 'Rommie',
-    'foto': '/img/card5.jpg',
+    'foto': '/img/card 5.jpg',
     'precio': '1000$',
     'habitaciones': '1',
     'sanitario': '1',
@@ -83,8 +98,10 @@ addItem({
 
 
 addItem({
+
+    'cartNu':'6',
     'titulo': 'Habitacion por CUCEA',
-    'foto': '/img/card4.jpg',
+    'foto': '/img/card6.jpg',
     'precio': '2500$',
     'habitaciones': '1',
     'sanitario': '1',
@@ -94,19 +111,23 @@ addItem({
 })
 
 addItem({
+
+    'cartNu':'7',
     'titulo': 'Rommie Cucei',
-    'foto': '/img/card5.jpg',
+    'foto': '/img/card3.jpg',
     'precio': '1500$',
     'habitaciones': '2',
     'sanitario': '1',
     'cochera': '1',
     'ubicacion': 'Boulevard Marcelino Barragan no.63',
-    'descripcion': 'Habitaciones para estnudiantes disponibles'
+    'descripcion': 'Habitaciones para estudiantes disponibles'
 })
 
 addItem({
+
+    'cartNu':'8',
     'titulo': 'Renta de departamento',
-    'foto': '/img/card6.jpg',
+    'foto': '/img/card4.jpg',
     'precio': '3500$',
     'habitaciones': '2',
     'sanitario': '2',
@@ -116,8 +137,10 @@ addItem({
 })
 
 addItem({
+
+    'cartNu':'9',
     'titulo': 'Casa para estudiante CUAAD',
-    'foto': '/img/card3.jpg',
+    'foto': '/img/card 5.jpg',
     'precio': '2300$',
     'habitaciones': '4',
     'sanitario': '1',
@@ -125,3 +148,17 @@ addItem({
     'ubicacion': 'Calzada Independencia no.2522',
     'descripcion': 'Casa amplia para compartir entre estudiantes'
 })
+
+addItem({
+
+    'cartNu':'10',
+    'titulo':'Habitacion cerca de chapu',
+    'foto': './img/card6.jpg',
+    'precio':'$4,999',
+    'habitaciones':'1',
+    'sanitario':'1',
+    'cochera':'1',
+    'ubicacion':'Justo Sierra no.145',
+    'descripcion':'Habitacion de lugo con buena ubicacion'
+    
+});

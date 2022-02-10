@@ -196,7 +196,7 @@ h5 {
   width: 20%;
   margin-left: 10px;
   margin-right: 10px;
-  display: none;
+  display: none; 
 }
 
 #slLeft,
@@ -211,15 +211,16 @@ h5 {
   cursor: pointer;
   font-size: 30px;
 }
-
-.card {
-  height: 200%;
+/* le agregue .list-items */
+.card  {
+  height: 100%;
   margin: 20px;
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   cursor: default;
   transition: all 400ms ease;
+  padding: 0;
 }
 
 .card:hover {
@@ -239,55 +240,4 @@ h5 {
 .cardImg {
   height: 200px;
   width: 200px;
-}
-
-.overlay {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  background-color: rgba(92, 95, 236, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.inf-btn {
-  width: 160px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  color: #252525;
-  font-weight: 700;
-  letter-spacing: 1px;
-  border-radius: 20px;
-  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
-}
-
-.inf-btn:hover {
-  color: #ffffff;
-  background-color: #f15fa3;
-  transition: all ease 0.3s;
-}
-
-.overlay {
-  visibility: hidden;
-}
-
-.slide-img:hover .overlay {
-  visibility: visible;
-  animation: fade 0.5s;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
