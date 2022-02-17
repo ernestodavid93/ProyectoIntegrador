@@ -110,4 +110,16 @@ formulario.addEventListener('submit', (e) => {
 			document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
 		}, 3000);
 	}
-}); 
+});
+
+// Lista de Usuarios
+document.querySelector('#btnS').addEventListener('click', saveUsr);
+
+function saveUsr() {
+	var qNombre = document.querySelector('#txtName').value,
+		qTelefono = document.querySelector('#txtPhone').value,
+		qEmail = document.querySelector('#inputEmail3').value,
+		qPass = document.querySelector('#password2').value;
+	addUsr(qNombre, qTelefono, qEmail, qPass);
+	
+}; //fin lista usuarios
