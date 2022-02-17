@@ -18,7 +18,7 @@ h1, h2, h3, h4{
 }
 
 .contactanos_img{
-    background-image: url('img/house.jpg');
+    background-image: url('../img/house.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -26,28 +26,39 @@ h1, h2, h3, h4{
 }
 
 .imagenn{
-    background-image: url('img/meet.jpg');
+    background-image: url('../img/meet.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     height: 55vh;
 }
 
-.baner{
-    background-image: url('img/room.jpg');
+.fondox{
+    background-image: url(../img/street.jpg);
+    background-attachment: fixed;
+    height: 90vh;
+}
+
+
+.baneri{
+    background-image: url('../img/bosque.jpg');
     height: 22rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    height: 70vh;
 }
 
 .bac{
-    border: 1px solid tomato;
+    border: 1px solid black;
     border-radius: 10px;
     text-align: justify;
     margin: 15px;
 }
 
+.blanco{
+    color: white;
+}
 
 .card{
     height: 101%;

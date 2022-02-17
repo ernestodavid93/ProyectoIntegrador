@@ -8,6 +8,7 @@
     <title>View</title>
     <link rel="stylesheet" href="view.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleHome.css">
     <!--Fonts Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,33 +26,91 @@
 <body>
 
 
-    <div class="container" id="navbarNav">
-        <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light bg col-md-5 col-sm-4">
-                <div class="dropdown">
-                    <a class="" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-bars iconos" style="cursor: pointer;"></i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="./home.html">Home</a>
-                        <a class="dropdown-item" href="./contactanos.html">Contactanos</a>
-                        <a class="dropdown-item" href="./nosotros.html">Nosotros</a>
-                    </div>
-                </div>
-            </nav>
-            <div class="col-md-6 col-sm-4">
-                <a class="navbar-brand " href="#">
-                    <img src="img/logo.jpeg" alt="">
-                </a>
-            </div>
-            <div class="col-md-1 col-sm-4">
-                <i class="fas fa-user-circle iconos"
-                    style="color: orange; align-items: center; cursor: pointer; margin-top: 1.5rem;"></i>
-            </div>
+   
+<div>
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Inicio de Sesión</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-<br><br>
+     
+                <form class="px-4 py-3">
+                  <div class="form-group">
+                    <label for="exampleDropdownFormEmail1">Correo</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@ejemplo.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleDropdownFormPassword1">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Clave">
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                      <label class="form-check-label" for="dropdownCheck">
+                        Recuérdame
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Acceder</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
+                <a class="dropdown-item" href="registroUsuario.html">¿Nuevo usuario? Regístrate</a>
+                <p style="text-align: center; font-weight: bold;">O</p>
+                <button type="button" class="btn btn-primary">Acceder con Facebook</button>
+                <button type="button" class="btn btn-danger">Acceder con Google</button>
+                
+        <div class="modal-footer">
+         <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+       <button type="button" class="btn btn-primary">Enviar</button> -->
+        </div>
+      </div>
     </div>
+  </div>
+  </div> 
+  <!-- accion registro fin-->
+  
+  
+  
+    <!-- NavBar -->
+    <div class="sticky-top">
+  <div class="container_fluid">
+      <nav class="navbar navbar-expand-md">
+          <div class="container_fluid">
+             
+              <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="MenuNavegacion">
+                  <ul class="navbar-nav ms3" >
+                      <li class="nav-item"><a class="nav-link" href="home.html" >Inicio</a></li>
+                      <li class="nav-item"><a class="nav-link" href="contactanos.html">Contáctanos</a></li>
+                      <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                  </ul>
+                  <ul class="navbar-nav ml-auto">
+                      <li>
+                          <a class="nav-link text-nowrap" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Iniciar sesión</a>
+                      </li>
+                  </ul>
+                  <ul>
+                     <!-- Logo animado -->
+                    <a href="home.html">
+                      <span id="uno">iRoomie</span>
+                    </a>
+                    <!-- fin logo animado -->
+                  </ul>
+  
+              </div>
+      </nav>
+  </div>
+  </div>
 <!-- col1 -->
+<br><br><br>
     <div class="container">
   <div class="row">
     <div class="col-md-8">
@@ -111,11 +170,12 @@
     </div>
 
       </div>
-      <br>
+      
       
 
     </div>
    <div>
+     <br>
   <button  type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contactar</button>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -163,7 +223,7 @@
                             Copyright
                         </div>
                         <div class="col-sm">
-                            Rent.A.Home.E6@gmail.com
+                          iRoomie.E6@gmail.com
                         </div>
                         <div class="col-sm">
                             01 (800) 000 1234

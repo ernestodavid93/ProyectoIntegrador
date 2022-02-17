@@ -4,6 +4,45 @@ h1, h2, h3, h4{
 
 }
 
+.formulario__mensaje{ /*mensaje oculto "Campos Incompletos" para formulario Registro de Usuario*/
+    display:none;
+}
+
+.formulario__mensaje-exito{ /*mensaje oculto "Enviado con exito" para formulario Registro de Usuario*/
+    display:none;
+}
+
+.formulario__mensaje-activo{ /*desocultar mensaje "Campos Incompletos"*/
+    display:block;
+}
+
+.formulario__mensaje-exito-activo{ /*desocultar mensaje "Enviado con exito"*/
+	display: block;
+}
+
+.formulario__validacion-inactivo{
+    opacity: 0;
+}
+
+/* .formulario__grupo-correcto .formulario__validacion-inactivo {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-inactivo {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+} */
+
+
 .imgprofile{
     height: 55%;
 }
@@ -58,7 +97,7 @@ h1, h2, h3, h4{
 }
 
 .bgfoo{
-    background-color: tomato;
+    background-color: #ff6347;
 }
 
 
@@ -91,9 +130,10 @@ footer{
 }
 
 .label{
-    margin: 0px 0px 0px 10px;
-    text-align: center; text-shadow: black 0.1em 0.1em 0.1em; color: white;
+font-family: Arial, Helvetica, sans-serif;
 }
+
+
 
 .button{
     width: 100px;
@@ -107,4 +147,17 @@ footer{
     color: black;
     /* text-shadow: black 0.1em 0.1em 0.2em; */
 
+}
+
+.text-center1{
+    font-family: Arial, Helvetica, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.text-center{
+    font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+    text-align: center;
+}
+.custom-file{
+    background-color: #d3cfca65;
 }

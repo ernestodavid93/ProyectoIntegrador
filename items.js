@@ -1,7 +1,6 @@
 function addItem(item){
     const itemHTML =
-    
-    '<div class="hijo card" id="c'+item.cartNu +'" style="width: 18rem;">\n'+
+    '<div class="hijo card cardCard" id="c'+item.cartNu +'" style="width: 18rem;">\n'+
     '   <img src="'+item.foto +'" class="cardImg img-fluid" alt="...">\n'+
     '    <div class="card-body">\n'+
     '      <h5 class="card-title">Precio '+item.precio+'</h5>\n'+
@@ -160,12 +159,4 @@ addItem({
     'cochera':'1',
     'ubicacion':'Justo Sierra no.145',
     'descripcion':'Habitacion de lugo con buena ubicacion'
-    
-});
-
-// var cartNu = 0;
-// var i;
-
-// for (i = 0, i <=10, i++) {
-//  cartNu = i;
-// }
+})
