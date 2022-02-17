@@ -74,6 +74,10 @@ const validarPassword2 = () => {
 /*		document.querySelector(`#grupo__password2 .formulario__input-error`).classList.remove('formulario__input-error-activo');
 		*/campos['password'] = true;
 	}
+
+	if (inputPassword2.value == "") {
+		document.querySelector(`#grupo__password2 i`).classList.add('fa-times-circle'); //añade la tacha
+	}
 }
 
 inputs.forEach((input) => { //PARA HACER LA VALIDACION EN CADA INPUT AL PRESIONAR DENTRO Y FUERA 
@@ -96,7 +100,7 @@ formulario.addEventListener('submit', (e) => {
 		document.querySelectorAll('#formulario i').forEach((icono) => { //restablecer las flechas
 			icono.classList.add('formulario__validacion-inactivo');
 		}); 
-        setInterval("location.reload()",2550); //recargar la pagina
+       // setInterval("location.reload()",2550); //recargar la pagina
 
 	} else { //mensaje de campos incompletos
         
@@ -107,3 +111,15 @@ formulario.addEventListener('submit', (e) => {
 		}, 3000);
 	}
 }); 
+
+// Lista de Usuarios
+document.querySelector('#btnS').addEventListener('click', saveUsr);
+
+function saveUsr() {
+	var qNombre = document.querySelector('#txtName').value,
+		qTelefono = document.querySelector('#txtPhone').value,
+		qEmail = document.querySelector('#inputEmail3').value,
+		qPass = document.querySelector('#password2').value;
+	addUsr(qNombre, qTelefono, qEmail, qPass);
+
+}; //fin lista usuarios 
