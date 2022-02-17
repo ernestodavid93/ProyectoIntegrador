@@ -89,7 +89,8 @@ formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
     //Si es correcto (true) todos los campos el mensaje aparecera activo
 	if(campos.nombre && campos.password && campos.correo && campos.telefono){
-		formulario.reset();
+
+		saveUsr();		
                                                                 //añadir clase
 		document.getElementById('formulario__mensaje-exito').classList.add ('formulario__mensaje-exito-activo');
 
@@ -100,7 +101,12 @@ formulario.addEventListener('submit', (e) => {
 		document.querySelectorAll('#formulario i').forEach((icono) => { //restablecer las flechas
 			icono.classList.add('formulario__validacion-inactivo');
 		}); 
-       // setInterval("location.reload()",2550); //recargar la pagina
+		formulario.reset();
+		campos.password = false;
+		campos.nombre = false;
+		campos.correo = false;
+		campos.telefono = false;
+       	//setInterval("location.reload()",2550); //recargar la pagina
 
 	} else { //mensaje de campos incompletos
         
@@ -113,7 +119,7 @@ formulario.addEventListener('submit', (e) => {
 }); 
 
 // Lista de Usuarios
-document.querySelector('#btnS').addEventListener('click', saveUsr);
+//document.querySelector('#btnS').addEventListener('click', saveUsr);
 
 function saveUsr() {
 	var qNombre = document.querySelector('#txtName').value,
