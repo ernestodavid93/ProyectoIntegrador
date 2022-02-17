@@ -110,66 +110,58 @@
 
 <main style="background-image: url('img/espacio.jpeg'); background-repeat: no-repeat; background-size: cover;">
 
-    <div class="container text-center">
-        <form>
-            <br><br><br>
-            <h1 class="text-center1">Arrendador</h1>
+<div class="container text-center">
+ <form id="formulario">
+    
+        <br><br><br>
+            <h1 class="text-center1">Registro de usuario</h1>
             <br>
             <br>
             
-            <div class="form-group">
-            <label class="label">Tipo de propiedad</label>
-            <select class="input" id="exampleFormControlSelect1" placeholder="Seleccione">
-                <option>-Seleccione-</option>
-                <option>Casa</option>
-                <option>Departamento</option>
-                <option>Habitacion (Rommie)</option>
-            </select>
+            <div id="grupo__nombre">
+                <label for="" class="label">Nombre</label>
+                <input class="input" type="text" name="nombre" id="txtName" placeholder="nombre completo">
+                <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
             </div>
 
-            <div >
+            <div id="grupo__telefono">
                 <label for="" class="label">Telefono</label>
-                <input class="input" type="text" placeholder="número de 10 dígitos">
+                <input class="input" type="text" name="telefono" id="txtPhone" placeholder="número de 10 dígitos">
+                <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
             </div>
             
-           
-            <div class="">
-            <label for="" class="label">Costo</label>
-            <input class="input" type="text" placeholder="$ mensualidad">
+            <div id="grupo__correo">
+                <label for="inputEmail3" class="label col-form-label">Email</label>
+                <input type="email" class="input" id="inputEmail3" name="correo" placeholder="correo@correo.com">
+                <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
             </div>
-        
-         
-            <div class="form-group">
-                <label for="" class="label">Ubicación</label>
-                <input class="input" type="text" placeholder="Dirección">
+
+            <div id="grupo__password">
+                <label for="inputPassword3" class="label">Contraseña</label>
+                <input class="input" type="password" name="password" id="password" placeholder="contraseña">
+                <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
             </div>
-        
-          
-            <div class="form-group">
-            <label for="" class="label">Numero de habitaciones</label>
-            <input class="input" type="text" placeholder="Número de habitaciones">
+
+            <div id="grupo__password2">
+                <label for="inputPassword3" class="label">Repetir contraseña</label>
+                <input class="input" type="password" name="password2" id="password2"  placeholder="repita su contraseña"><i class="formulario__validacion-inactivo fas fa-times-circle"></i>
             </div>
-            
-            <div class="form-group">
-            <label for="" class="label">Descripcion</label>
-            <textarea class="input" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-        
-        
-            <div class="custom-file">
-                <label for="" class="label">Subir imagenes</label>
-                <input type="file" class="input" id="customFileLang" lang="es">
-                <label class="label" for="customFileLang">Seleccionar Archivo</label>
-            </div>
-            
-            <br><br>
+  
+            <div class="alert alert-warning formulario__mensaje" role="alert" id="formulario__mensaje">
+                Campos Incompletos!
+              </div>
+
+              <div class="alert alert-success formulario__mensaje-exito" role="alert" id="formulario__mensaje-exito">
+                Enviado con exito!
+              </div>
+
             <div class="col text-center">
-                <button class="button">Enviar</button>
-            </div>
-        
+                <button type="submit" class="button" id="btnS">Enviar</button>
+              </div>
             <br>
-        </form>
-    </div>
+
+    </form>
+</div>
 
 </main>
     <footer id="footer" class="py-5 bgfoo text-white">
@@ -189,6 +181,8 @@
             </div>
     </footer>
 
+<script src="usr.js"></script>
+<script src="validacion_registroUsuario.js"></script>
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
 integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
