@@ -298,7 +298,7 @@ h5 {
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
   }
   100% {
-    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    transform: translateX(-50%) translateY(-50%) rotate(180deg);
   }
 }
 
@@ -334,7 +334,7 @@ h5 {
   display: block;
   border: 15px solid #ff8f1f;
   transform: translateX(-50%) translateY(-50%) rotate(0deg);
-  animation: 10s infinite alternate ease-in-out tipsy;
+  animation: 15s infinite alternate ease-in-out tipsy;
 }
 
 #uno:before {
@@ -380,7 +380,7 @@ ul li a::before{
 
 
 .sticky-top{
-  background-color: tomato; 
+  background-color: rgb(255, 146, 44); 
 }
 
 .nav-link{
